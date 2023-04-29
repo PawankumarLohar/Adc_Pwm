@@ -1,0 +1,534 @@
+Microchip MPLAB XC8 Compiler V2.05 ()
+
+Linker command line:
+
+-W-3 --edf=C:\Program Files (x86)\Microchip\xc8\v2.05\pic\dat\en_msgs.txt \
+  -cs -h+dist/default/production\AdcPwm.X.production.sym \
+  --cmf=dist/default/production\AdcPwm.X.production.cmf -z -Q10LF322 \
+  -oC:\Users\pawan\AppData\Local\Temp\sah8.2 --defsym=__MPLAB_BUILD=1 \
+  -Mdist/default/production/AdcPwm.X.production.map -E1 -ver=XC8 \
+  --acfsm=1493 -ASTACK=04Bh-07Dh -pstack=STACK -ACODE=00h-01FFh \
+  -ASTRCODE=00h-01FFh -ASTRING=00h-0FFhx2 -ACONST=00h-0FFhx2 \
+  -AENTRY=00h-0FFhx2 -ABANK0=040h-07Dh -ARAM=040h-07Dh -AABS1=040h-07Fh \
+  -ACOMMON=07Eh-07Fh -ASFR0=00h-03Fh \
+  -preset_vec=00h,intentry=04h,init,end_init -ppowerup=CODE -pcinit=CODE \
+  -pfunctab=ENTRY -ACONFIG=02007h-02007h -pconfig=CONFIG -DCONFIG=2 \
+  -AIDLOC=02000h-02003h -pidloc=IDLOC -DIDLOC=2 -DCODE=2 -DSTRCODE=2 \
+  -DSTRING=2 -DCONST=2 -DENTRY=2 -k \
+  C:\Users\pawan\AppData\Local\Temp\sah8.o \
+  dist/default/production\AdcPwm.X.production.o 
+
+Object code version is 3.11
+
+Machine type is 10LF322
+
+
+
+                Name                               Link     Load   Length Selector   Space Scale
+C:\Users\pawan\AppData\Local\Temp\sah8.o
+                end_init                              A        A        1        8       0
+                reset_vec                             0        0        1        0       0
+                config                             2007     2007        1     400E       0
+dist/default/production\AdcPwm.X.production.o
+                cinit                                 B        B        7        8       0
+                intentry                              4        4        6        8       0
+                text7                                12       12       5C        8       0
+                text6                                97       97        3        8       0
+                text5                                8E       8E        5        8       0
+                text4                                86       86        8        8       0
+                text3                                93       93        4        8       0
+                text2                                6E       6E       10        8       0
+                text1                                9A       9A        2        8       0
+                maintext                             7E       7E        8        8       0
+                cstackBANK0                          40       40        6       40       1
+                bssBANK0                             46       46        5       40       1
+
+TOTAL           Name                               Link     Load   Length     Space
+        CLASS   STACK          
+
+        CLASS   CODE           
+                end_init                              A        A        1         0
+                cinit                                 B        B        7         0
+                intentry                              4        4        6         0
+                reset_vec                             0        0        1         0
+                text7                                12       12       5C         0
+                text6                                97       97        3         0
+                text5                                8E       8E        5         0
+                text4                                86       86        8         0
+                text3                                93       93        4         0
+                text2                                6E       6E       10         0
+                text1                                9A       9A        2         0
+                maintext                             7E       7E        8         0
+
+        CLASS   STRCODE        
+
+        CLASS   STRING         
+
+        CLASS   CONST          
+
+        CLASS   ENTRY          
+
+        CLASS   BANK0          
+                cstackBANK0                          40       40        6         1
+                bssBANK0                             46       46        5         1
+
+        CLASS   RAM            
+
+        CLASS   ABS1           
+                abs_s1                               7E       7E        2         1
+
+        CLASS   COMMON         
+
+        CLASS   SFR0           
+
+        CLASS   CONFIG         
+                config                             2007     2007        1         0
+
+        CLASS   IDLOC          
+
+        CLASS   EEDATA         
+
+
+
+SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class     Delta
+
+                reset_vec                      000000  000001  000001         0       0  CODE        2
+                intentry                       000004  000098  00009C         8       0  CODE        2
+                cstackBANK0                    000040  00000B  00004B        40       1  BANK0       1
+                config                         002007  000001  002008      400E       0  CONFIG      2
+
+
+UNUSED ADDRESS RANGES
+
+        Name                Unused          Largest block    Delta
+        BANK0            004B-007D             33           1
+        CODE             0001-0003              3           2
+                         009C-01FF            164
+        CONST            0001-0003              3           2
+                         009C-01FF             64
+        ENTRY            0001-0003              3           2
+                         009C-01FF             64
+        IDLOC            2000-2003              4           2
+        RAM              004B-007D             33           1
+        SFR0             0000-003F             40           1
+        STACK            004B-007D             33           1
+        STRCODE          0001-0003              3           2
+                         009C-01FF            164
+        STRING           0001-0003              3           2
+                         009C-01FF             64
+
+                                  Symbol Table
+
+_ADCONbits                   (abs)        001F
+_ADRES                       (abs)        001E
+_ANSELAbits                  (abs)        0008
+_CLC1CON                     (abs)        0031
+_CWG1CON0                    (abs)        0039
+_ClockConfig                 text6        0097
+_ConfigAdcInterrupt          text5        008E
+_ConfigAdcModule             text4        0086
+_ConfigAdcPins               text3        0093
+_ConfigPwm                   text2        006E
+_Counter                     bssBANK0     004A
+_INTCONbits                  (abs)        000B
+_OSCCON                      (abs)        0010
+_PIE1bits                    (abs)        000D
+_PIR1bits                    (abs)        000C
+_PR2                         (abs)        0012
+_PWM2CON                     (abs)        0019
+_PWM2CONbits                 (abs)        0019
+_PWM2DCH                     (abs)        0018
+_PWM2DCL                     (abs)        0017
+_StartConverion              text1        009A
+_Sum                         bssBANK0     0046
+_T2CONbits                   (abs)        0013
+_TRISAbits                   (abs)        0006
+_WPUA                        (abs)        0009
+__CFG_BOREN$OFF              (abs)        0000
+__CFG_BORV$LO                (abs)        0000
+__CFG_CP$OFF                 (abs)        0000
+__CFG_FOSC$INTOSC            (abs)        0000
+__CFG_LPBOR$OFF              (abs)        0000
+__CFG_LVP$OFF                (abs)        0000
+__CFG_MCLRE$OFF              (abs)        0000
+__CFG_PWRTE$OFF              (abs)        0000
+__CFG_WDTE$OFF               (abs)        0000
+__CFG_WRT$OFF                (abs)        0000
+__Habs1                      abs1         0000
+__Hbank0                     bank0        0000
+__HbssBANK0                  bssBANK0     0000
+__Hcinit                     cinit        0012
+__Hclrtext                   clrtext      0000
+__Hcode                      code         0000
+__Hcommon                    common       0000
+__Hconfig                    config       2008
+__HcstackBANK0               cstackBANK0  0000
+__HcstackCOMMON              cstackCOMMON 0000
+__Heeprom_data               eeprom_data  0000
+__Hend_init                  end_init     000B
+__Hfunctab                   functab      0000
+__Hidloc                     idloc        0000
+__Hinit                      init         000A
+__Hintentry                  intentry     000A
+__Hmaintext                  maintext     0000
+__Hpowerup                   powerup      0000
+__Hram                       ram          0000
+__Hreset_vec                 reset_vec    0001
+__Hsfr0                      sfr0         0000
+__Hspace_0                   (abs)        2008
+__Hspace_1                   (abs)        004B
+__Hspace_2                   (abs)        0000
+__Hspace_3                   (abs)        0000
+__Hstack                     stack        0000
+__Hstrings                   strings      0000
+__Htext                      text         0000
+__Labs1                      abs1         0000
+__Lbank0                     bank0        0000
+__LbssBANK0                  bssBANK0     0000
+__Lcinit                     cinit        000B
+__Lclrtext                   clrtext      0000
+__Lcode                      code         0000
+__Lcommon                    common       0000
+__Lconfig                    config       2007
+__LcstackBANK0               cstackBANK0  0000
+__LcstackCOMMON              cstackCOMMON 0000
+__Leeprom_data               eeprom_data  0000
+__Lend_init                  end_init     000A
+__Lfunctab                   functab      0000
+__Lidloc                     idloc        0000
+__Linit                      init         000A
+__Lintentry                  intentry     0004
+__Lmaintext                  maintext     0000
+__Lpowerup                   powerup      0000
+__Lram                       ram          0000
+__Lreset_vec                 reset_vec    0000
+__Lsfr0                      sfr0         0000
+__Lspace_0                   (abs)        0000
+__Lspace_1                   (abs)        0000
+__Lspace_2                   (abs)        0000
+__Lspace_3                   (abs)        0000
+__Lstack                     stack        0000
+__Lstrings                   strings      0000
+__Ltext                      text         0000
+__S0                         (abs)        2008
+__S1                         (abs)        004B
+__S2                         (abs)        0000
+___int_sp                    stack        0000
+___latbits                   (abs)        0000
+___sp                        stack        0000
+___stackhi                   (abs)        0000
+___stacklo                   (abs)        0000
+__end_of_ClockConfig         text6        009A
+__end_of_ConfigAdcInterrupt  text5        0093
+__end_of_ConfigAdcModule     text4        008E
+__end_of_ConfigAdcPins       text3        0097
+__end_of_ConfigPwm           text2        007E
+__end_of_StartConverion      text1        009C
+__end_of__initialization     cinit        0010
+__end_of_isr_routine         text7        006E
+__end_of_main                maintext     0086
+__initialization             cinit        000B
+__pbssBANK0                  bssBANK0     0046
+__pcstackBANK0               cstackBANK0  0040
+__pcstackCOMMON              cstackCOMMON 0000
+__pintentry                  intentry     0004
+__pmaintext                  maintext     007E
+__ptext1                     text1        009A
+__ptext2                     text2        006E
+__ptext3                     text3        0093
+__ptext4                     text4        0086
+__ptext5                     text5        008E
+__ptext6                     text6        0097
+__ptext7                     text7        0012
+__size_of_ClockConfig        (abs)        0000
+__size_of_ConfigAdcInterrupt (abs)        0000
+__size_of_ConfigAdcModule    (abs)        0000
+__size_of_ConfigAdcPins      (abs)        0000
+__size_of_ConfigPwm          (abs)        0000
+__size_of_StartConverion     (abs)        0000
+__size_of_isr_routine        (abs)        0000
+__size_of_main               (abs)        0000
+_isr_routine                 text7        0012
+_main                        maintext     007E
+btemp                        (abs)        007E
+end_of_initialization        cinit        0010
+interrupt_function           intentry     0004
+intlevel0                    functab      0000
+intlevel1                    functab      0000
+intlevel2                    functab      0000
+intlevel3                    functab      0000
+intlevel4                    functab      0000
+intlevel5                    functab      0000
+reset_vec                    reset_vec    0000
+saved_w                      (abs)        007E
+start                        init         000A
+start_initialization         cinit        000B
+wtemp0                       (abs)        007E
+
+
+FUNCTION INFORMATION:
+
+ *************** function _main *****************
+ Defined at:
+		line 56 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  2   61[None  ] int 
+ Registers used:
+		wreg, status,2, status,0, pclath, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0
+      Params:         0       0
+      Locals:         0       0
+      Temps:          0       0
+      Totals:         0       0
+Total ram usage:        0 bytes
+ Hardware stack levels required when called:    2
+ This function calls:
+		_ClockConfig
+		_ConfigAdcInterrupt
+		_ConfigAdcModule
+		_ConfigAdcPins
+		_ConfigPwm
+		_StartConverion
+ This function is called by:
+		Startup code after reset
+ This function uses a non-reentrant model
+
+
+ *************** function _StartConverion *****************
+ Defined at:
+		line 105 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		None
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0
+      Params:         0       0
+      Locals:         0       0
+      Temps:          0       0
+      Totals:         0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _ConfigPwm *****************
+ Defined at:
+		line 115 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0
+      Params:         0       0
+      Locals:         0       0
+      Temps:          0       0
+      Totals:         0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _ConfigAdcPins *****************
+ Defined at:
+		line 77 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		status,2
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0
+      Params:         0       0
+      Locals:         0       0
+      Temps:          0       0
+      Totals:         0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _ConfigAdcModule *****************
+ Defined at:
+		line 84 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		None
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0
+      Params:         0       0
+      Locals:         0       0
+      Temps:          0       0
+      Totals:         0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _ConfigAdcInterrupt *****************
+ Defined at:
+		line 97 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		None
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0
+      Params:         0       0
+      Locals:         0       0
+      Temps:          0       0
+      Totals:         0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _ClockConfig *****************
+ Defined at:
+		line 72 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0
+      Params:         0       0
+      Locals:         0       0
+      Temps:          0       0
+      Totals:         0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _isr_routine *****************
+ Defined at:
+		line 36 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMMON   BANK0
+      Params:         0       0
+      Locals:         0       0
+      Temps:          0       6
+      Totals:         0       6
+Total ram usage:        6 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		Interrupt level 1
+ This function uses a non-reentrant model
+
+
+
+MODULE INFORMATION
+
+Module		Function		Class		Link	Load	Size
+shared
+		__initialization		CODE           	000B	0000	6
+
+shared estimated size: 6
+
+main.c
+		_ConfigAdcPins 		CODE           	0093	0000	5
+		_isr_routine   		CODE           	0012	0000	93
+		_StartConverion		CODE           	009A	0000	3
+		_ConfigPwm     		CODE           	006E	0000	17
+		_ClockConfig   		CODE           	0097	0000	4
+		_main          		CODE           	007E	0000	9
+		_ConfigAdcModule		CODE           	0086	0000	9
+		_ConfigAdcInterrupt		CODE           	008E	0000	6
+
+main.c estimated size: 146
+
